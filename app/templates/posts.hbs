@@ -10,7 +10,7 @@
       </div>
       {{#each post in controller}}
       {{log post}}
-      <li><strong>{{post.data.score}}</strong> - {{post.data.title}}</li>
+      <li><strong>{{post.data.score}}</strong> - {{post.data.title}} <span  {{action 'addFavorite' post}}>&hearts;</span></li>
       {{/each}}
 
     </div>

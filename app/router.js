@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('posts', {path: "/r/:subreddit_name"});
   this.route('search', {path: "/search/:searchword"});
   this.route('subsearch', {path: '/subreddits/search/:subSearchWord'});
+  this.route('favorites');
 });
 
 export default Router;
