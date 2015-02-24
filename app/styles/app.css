@@ -1,0 +1,30 @@
+#searchWell{
+  margin-left: 226px;
+  margin-right: 226px;
+}
+
+#siteTitle{
+  margin-bottom: -41px;
+}
+
+#title{
+  margin-top: -1px
+}
+
+#gridHeader{
+  text-decoration: underline;
+}
+
+#searchBoxes{
+  display: flex;
+  margin-bottom: 10px
+}
+
+#postSearchBox{
+  margin-left: 420px;
+  margin-top: -1px;
+}
+
+#subredditSearchBox{
+  margin-left: 20px;
+}

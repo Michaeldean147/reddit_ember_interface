@@ -1,18 +1,30 @@
-<h2 id="title">My Reddit Interface</h2>
+<div id="navBar" class="ui menu">
+    <a class="item">
+      {{link-to "Home" "index" }}
+    </a>
+    <a class="item">
+      {{link-to "Games" "posts" "games"}}
+    </a>
+    <a class="item">
+      {{link-to "Movies" "posts" "movies"}}
+    </a>
+    <div class="right menu">
+      <div id="siteTitle" class="item">
+        <h4 id="title">My Reddit Interface</h4>
+      </div>
+    </div>
+</div>
 
-{{link-to "Games" "posts" "games"}} | {{link-to "Movies" "posts" "movies"}}
-
-  <div id="name">
+<div id="searchBoxes">
+  <div id="postSearchBox">
     {{input value=searchWord placeholder="Search Posts"}}
     <button {{action "search" }}>Search</button>
   </div>
 
-  <div id="name">
+  <div id="subredditSearchBox">
     {{input value=subSearchWord placeholder="Search SubReddits"}}
     <button {{action "subSearch" }}>Search</button>
   </div>
-
-
-
+</div>
 
 {{outlet}}

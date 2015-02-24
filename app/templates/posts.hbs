@@ -1,9 +1,15 @@
-<h1>Posts Route</h1>
+<div id="searchWell" class="one column stackable ui grid">
+  <div class="column">
+    <div class="ui segment">
+      <h2 id="gridHeader">Posts Route</h2>
 
-  {{#each post in model}}
-  {{log post}}
-  <li><strong>{{post.data.score}}</strong> - {{post.data.title}}</li>
-  {{/each}}
+      {{#each post in model}}
+      {{log post}}
+      <li><strong>{{post.data.score}}</strong> - {{post.data.title}}</li>
+      {{/each}}
 
+    </div>
+  </div>
+</div>
 
 {{outlet}}

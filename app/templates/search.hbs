@@ -1,8 +1,10 @@
-<h2>Search Results</h2>
-
-  {{#each post in model}}
-  <li><strong>{{post.data.score}}</strong> - {{post.data.title}}</li>
-  {{/each}}
-
-
-{{outlet}}
+<div id="searchWell" class="one column stackable ui grid">
+  <div class="column">
+    <div class="ui segment">
+      <h2 id="gridHeader">Search Results</h2>
+      {{#each post in model}}
+      <li><strong>{{post.data.score}}</strong> - {{post.data.title}}</li>
+      {{/each}}
+    </div>
+  </div>
+</div>
