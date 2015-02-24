@@ -1,3 +1,18 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<h2 id="title">My Reddit Interface</h2>
+
+{{link-to "Games" "posts" "games"}} | {{link-to "Movies" "posts" "movies"}}
+
+  <div id="name">
+    {{input value=searchWord placeholder="Search Posts"}}
+    <button {{action "search" }}>Search</button>
+  </div>
+
+  <div id="name">
+    {{input value=subSearchWord placeholder="Search SubReddits"}}
+    <button {{action "subSearch" }}>Search</button>
+  </div>
+
+
+
 
 {{outlet}}
