@@ -1,9 +1,14 @@
 <div id="searchWell" class="one column stackable ui grid">
   <div class="column">
     <div class="ui segment">
-      <h2 id="gridHeader">Posts Route</h2>
-
-      {{#each post in model}}
+      <div>
+        <h2 id="gridHeader">Posts Route</h2>
+        <div id="sortButtons">
+          <button {{action 'sortPosts'}}>&#9650;</button>
+          <button  {{action 'sortPosts'}}>&#9660;</button>
+        </div>
+      </div>
+      {{#each post in controller}}
       {{log post}}
       <li><strong>{{post.data.score}}</strong> - {{post.data.title}}</li>
       {{/each}}
