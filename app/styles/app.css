@@ -32,3 +32,19 @@
 #sortButtons{
   margin-bottom: 11px;
 }
+
+#searchSubmit{
+  padding-bottom: 1px;
+}
+
+button{
+  padding-bottom: 1px
+}
+
+span{
+  color: red;
+}
+
+#subredditSearchBox{
+
+}
